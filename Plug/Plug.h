@@ -13,6 +13,9 @@ FOUNDATION_EXPORT const unsigned char PlugVersionString[];
 #import <Plug/PLGInetSocketAddress.h>
 #import <Plug/PLGIODispatcher.h>
 #import <Plug/PLGIODispatcherDelegate.h>
+#import <Plug/PLGListener.h>
+#import <Plug/PLGListenerDelegate.h>
+#import <Plug/PLGListenerStatistics.h>
 #import <Plug/PLGPOSIXError.h>
 #import <Plug/PLGSocket.h>
 #import <Plug/PLGSocketAddress.h>
