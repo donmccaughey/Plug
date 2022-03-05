@@ -94,7 +94,8 @@ small class hierarchy provides interfaces for the different file-like objects.
 
 - `PLGVNodeDelegate`: protocol for an object that handles file system events.
 
-- `PLGSocket`: any file descriptor that can be created by `socket()`.
+- `PLGSocket`: any file descriptor that can be created by `socket()` or
+  returned by `accept()`.
 
 ### Listening for Connections
 

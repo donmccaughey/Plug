@@ -26,6 +26,17 @@
 		D49A8CCB27D3511F00CA0F2A /* PLGFile.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CC927D3511F00CA0F2A /* PLGFile.h */; };
 		D49A8CCC27D3511F00CA0F2A /* PLGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CCA27D3511F00CA0F2A /* PLGFile.m */; };
 		D49A8CCD27D3511F00CA0F2A /* PLGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CCA27D3511F00CA0F2A /* PLGFile.m */; };
+		D49A8CD527D3EBA200CA0F2A /* PLGTimeout.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CD327D3EBA200CA0F2A /* PLGTimeout.h */; };
+		D49A8CD627D3EBA200CA0F2A /* PLGTimeout.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CD427D3EBA200CA0F2A /* PLGTimeout.m */; };
+		D49A8CD727D3EBA200CA0F2A /* PLGTimeout.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CD427D3EBA200CA0F2A /* PLGTimeout.m */; };
+		D49A8CDA27D3FDC600CA0F2A /* PLGVNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CD827D3FDC600CA0F2A /* PLGVNode.h */; };
+		D49A8CDB27D3FDC600CA0F2A /* PLGVNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CD927D3FDC600CA0F2A /* PLGVNode.m */; };
+		D49A8CDC27D3FDC600CA0F2A /* PLGVNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CD927D3FDC600CA0F2A /* PLGVNode.m */; };
+		D49A8CDE27D3FE4200CA0F2A /* PLGVNodeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CDD27D3FE4200CA0F2A /* PLGVNodeDelegate.h */; };
+		D49A8CE127D4006C00CA0F2A /* PLGIODispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CDF27D4006C00CA0F2A /* PLGIODispatcher.h */; };
+		D49A8CE227D4006C00CA0F2A /* PLGIODispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE027D4006C00CA0F2A /* PLGIODispatcher.m */; };
+		D49A8CE327D4006C00CA0F2A /* PLGIODispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE027D4006C00CA0F2A /* PLGIODispatcher.m */; };
+		D49A8CE527D4014900CA0F2A /* PLGIODispatcherDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CE427D4014900CA0F2A /* PLGIODispatcherDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +67,14 @@
 		D49A8CC827D2F48200CA0F2A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D49A8CC927D3511F00CA0F2A /* PLGFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGFile.h; sourceTree = "<group>"; };
 		D49A8CCA27D3511F00CA0F2A /* PLGFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGFile.m; sourceTree = "<group>"; };
+		D49A8CD327D3EBA200CA0F2A /* PLGTimeout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGTimeout.h; sourceTree = "<group>"; };
+		D49A8CD427D3EBA200CA0F2A /* PLGTimeout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGTimeout.m; sourceTree = "<group>"; };
+		D49A8CD827D3FDC600CA0F2A /* PLGVNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGVNode.h; sourceTree = "<group>"; };
+		D49A8CD927D3FDC600CA0F2A /* PLGVNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGVNode.m; sourceTree = "<group>"; };
+		D49A8CDD27D3FE4200CA0F2A /* PLGVNodeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGVNodeDelegate.h; sourceTree = "<group>"; };
+		D49A8CDF27D4006C00CA0F2A /* PLGIODispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGIODispatcher.h; sourceTree = "<group>"; };
+		D49A8CE027D4006C00CA0F2A /* PLGIODispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGIODispatcher.m; sourceTree = "<group>"; };
+		D49A8CE427D4014900CA0F2A /* PLGIODispatcherDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGIODispatcherDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +127,18 @@
 				D49A8CB927D1E4F100CA0F2A /* PLGFileDescriptor.m */,
 				D49A8CC227D1E98700CA0F2A /* PLGInetSocketAddress.h */,
 				D49A8CC327D1E98700CA0F2A /* PLGInetSocketAddress.m */,
+				D49A8CDF27D4006C00CA0F2A /* PLGIODispatcher.h */,
+				D49A8CE027D4006C00CA0F2A /* PLGIODispatcher.m */,
+				D49A8CE427D4014900CA0F2A /* PLGIODispatcherDelegate.h */,
 				D49A8CB327D1E37300CA0F2A /* PLGPOSIXError.h */,
 				D49A8CB427D1E37300CA0F2A /* PLGPOSIXError.m */,
 				D49A8CBD27D1E80500CA0F2A /* PLGSocketAddress.h */,
 				D49A8CBE27D1E80500CA0F2A /* PLGSocketAddress.m */,
+				D49A8CD327D3EBA200CA0F2A /* PLGTimeout.h */,
+				D49A8CD427D3EBA200CA0F2A /* PLGTimeout.m */,
+				D49A8CD827D3FDC600CA0F2A /* PLGVNode.h */,
+				D49A8CD927D3FDC600CA0F2A /* PLGVNode.m */,
+				D49A8CDD27D3FE4200CA0F2A /* PLGVNodeDelegate.h */,
 			);
 			path = Plug;
 			sourceTree = "<group>";
@@ -132,11 +159,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D49A8CBA27D1E4F100CA0F2A /* PLGFileDescriptor.h in Headers */,
+				D49A8CE127D4006C00CA0F2A /* PLGIODispatcher.h in Headers */,
 				D49A8CC427D1E98700CA0F2A /* PLGInetSocketAddress.h in Headers */,
+				D49A8CE527D4014900CA0F2A /* PLGIODispatcherDelegate.h in Headers */,
+				D49A8CD527D3EBA200CA0F2A /* PLGTimeout.h in Headers */,
 				D49A8CAA27D1E31000CA0F2A /* Plug.h in Headers */,
 				D49A8CBF27D1E80500CA0F2A /* PLGSocketAddress.h in Headers */,
 				D49A8CCB27D3511F00CA0F2A /* PLGFile.h in Headers */,
+				D49A8CDE27D3FE4200CA0F2A /* PLGVNodeDelegate.h in Headers */,
 				D49A8CB527D1E37400CA0F2A /* PLGPOSIXError.h in Headers */,
+				D49A8CDA27D3FDC600CA0F2A /* PLGVNode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,11 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49A8CE227D4006C00CA0F2A /* PLGIODispatcher.m in Sources */,
 				D49A8CBB27D1E4F100CA0F2A /* PLGFileDescriptor.m in Sources */,
 				D49A8CCC27D3511F00CA0F2A /* PLGFile.m in Sources */,
 				D49A8CC527D1E98700CA0F2A /* PLGInetSocketAddress.m in Sources */,
 				D49A8CB627D1E37400CA0F2A /* PLGPOSIXError.m in Sources */,
+				D49A8CDB27D3FDC600CA0F2A /* PLGVNode.m in Sources */,
 				D49A8C9E27D1E31000CA0F2A /* Plug.docc in Sources */,
+				D49A8CD627D3EBA200CA0F2A /* PLGTimeout.m in Sources */,
 				D49A8CC027D1E80500CA0F2A /* PLGSocketAddress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,11 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49A8CE327D4006C00CA0F2A /* PLGIODispatcher.m in Sources */,
 				D49A8CBC27D1E4F100CA0F2A /* PLGFileDescriptor.m in Sources */,
 				D49A8CCD27D3511F00CA0F2A /* PLGFile.m in Sources */,
 				D49A8CC627D1E98700CA0F2A /* PLGInetSocketAddress.m in Sources */,
 				D49A8CB727D1E37400CA0F2A /* PLGPOSIXError.m in Sources */,
+				D49A8CDC27D3FDC600CA0F2A /* PLGVNode.m in Sources */,
 				D49A8CA927D1E31000CA0F2A /* PlugTests.m in Sources */,
+				D49A8CD727D3EBA200CA0F2A /* PLGTimeout.m in Sources */,
 				D49A8CC127D1E80500CA0F2A /* PLGSocketAddress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +445,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.Plug;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -434,6 +473,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.Plug;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
