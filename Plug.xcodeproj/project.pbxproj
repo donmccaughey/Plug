@@ -37,6 +37,16 @@
 		D49A8CE227D4006C00CA0F2A /* PLGIODispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE027D4006C00CA0F2A /* PLGIODispatcher.m */; };
 		D49A8CE327D4006C00CA0F2A /* PLGIODispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE027D4006C00CA0F2A /* PLGIODispatcher.m */; };
 		D49A8CE527D4014900CA0F2A /* PLGIODispatcherDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CE427D4014900CA0F2A /* PLGIODispatcherDelegate.h */; };
+		D49A8CE827D403AA00CA0F2A /* PLGConnectionStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CE627D403AA00CA0F2A /* PLGConnectionStatistics.h */; };
+		D49A8CE927D403AA00CA0F2A /* PLGConnectionStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE727D403AA00CA0F2A /* PLGConnectionStatistics.m */; };
+		D49A8CEA27D403AA00CA0F2A /* PLGConnectionStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE727D403AA00CA0F2A /* PLGConnectionStatistics.m */; };
+		D49A8CEC27D4040200CA0F2A /* PLGConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CEB27D4040200CA0F2A /* PLGConnectionDelegate.h */; };
+		D49A8CEF27D4048B00CA0F2A /* PLGConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CED27D4048B00CA0F2A /* PLGConnection.h */; };
+		D49A8CF027D4048B00CA0F2A /* PLGConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CEE27D4048B00CA0F2A /* PLGConnection.m */; };
+		D49A8CF127D4048B00CA0F2A /* PLGConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CEE27D4048B00CA0F2A /* PLGConnection.m */; };
+		D49A8CF427D405D500CA0F2A /* PLGSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CF227D405D500CA0F2A /* PLGSocket.h */; };
+		D49A8CF527D405D500CA0F2A /* PLGSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CF327D405D500CA0F2A /* PLGSocket.m */; };
+		D49A8CF627D405D500CA0F2A /* PLGSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CF327D405D500CA0F2A /* PLGSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +85,13 @@
 		D49A8CDF27D4006C00CA0F2A /* PLGIODispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGIODispatcher.h; sourceTree = "<group>"; };
 		D49A8CE027D4006C00CA0F2A /* PLGIODispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGIODispatcher.m; sourceTree = "<group>"; };
 		D49A8CE427D4014900CA0F2A /* PLGIODispatcherDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGIODispatcherDelegate.h; sourceTree = "<group>"; };
+		D49A8CE627D403AA00CA0F2A /* PLGConnectionStatistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGConnectionStatistics.h; sourceTree = "<group>"; };
+		D49A8CE727D403AA00CA0F2A /* PLGConnectionStatistics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGConnectionStatistics.m; sourceTree = "<group>"; };
+		D49A8CEB27D4040200CA0F2A /* PLGConnectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGConnectionDelegate.h; sourceTree = "<group>"; };
+		D49A8CED27D4048B00CA0F2A /* PLGConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGConnection.h; sourceTree = "<group>"; };
+		D49A8CEE27D4048B00CA0F2A /* PLGConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGConnection.m; sourceTree = "<group>"; };
+		D49A8CF227D405D500CA0F2A /* PLGSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGSocket.h; sourceTree = "<group>"; };
+		D49A8CF327D405D500CA0F2A /* PLGSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +138,11 @@
 			children = (
 				D49A8C9D27D1E31000CA0F2A /* Plug.docc */,
 				D49A8C9C27D1E31000CA0F2A /* Plug.h */,
+				D49A8CED27D4048B00CA0F2A /* PLGConnection.h */,
+				D49A8CEE27D4048B00CA0F2A /* PLGConnection.m */,
+				D49A8CEB27D4040200CA0F2A /* PLGConnectionDelegate.h */,
+				D49A8CE627D403AA00CA0F2A /* PLGConnectionStatistics.h */,
+				D49A8CE727D403AA00CA0F2A /* PLGConnectionStatistics.m */,
 				D49A8CC927D3511F00CA0F2A /* PLGFile.h */,
 				D49A8CCA27D3511F00CA0F2A /* PLGFile.m */,
 				D49A8CB827D1E4F100CA0F2A /* PLGFileDescriptor.h */,
@@ -132,6 +154,8 @@
 				D49A8CE427D4014900CA0F2A /* PLGIODispatcherDelegate.h */,
 				D49A8CB327D1E37300CA0F2A /* PLGPOSIXError.h */,
 				D49A8CB427D1E37300CA0F2A /* PLGPOSIXError.m */,
+				D49A8CF227D405D500CA0F2A /* PLGSocket.h */,
+				D49A8CF327D405D500CA0F2A /* PLGSocket.m */,
 				D49A8CBD27D1E80500CA0F2A /* PLGSocketAddress.h */,
 				D49A8CBE27D1E80500CA0F2A /* PLGSocketAddress.m */,
 				D49A8CD327D3EBA200CA0F2A /* PLGTimeout.h */,
@@ -161,11 +185,15 @@
 				D49A8CBA27D1E4F100CA0F2A /* PLGFileDescriptor.h in Headers */,
 				D49A8CE127D4006C00CA0F2A /* PLGIODispatcher.h in Headers */,
 				D49A8CC427D1E98700CA0F2A /* PLGInetSocketAddress.h in Headers */,
+				D49A8CEC27D4040200CA0F2A /* PLGConnectionDelegate.h in Headers */,
 				D49A8CE527D4014900CA0F2A /* PLGIODispatcherDelegate.h in Headers */,
 				D49A8CD527D3EBA200CA0F2A /* PLGTimeout.h in Headers */,
+				D49A8CE827D403AA00CA0F2A /* PLGConnectionStatistics.h in Headers */,
 				D49A8CAA27D1E31000CA0F2A /* Plug.h in Headers */,
+				D49A8CF427D405D500CA0F2A /* PLGSocket.h in Headers */,
 				D49A8CBF27D1E80500CA0F2A /* PLGSocketAddress.h in Headers */,
 				D49A8CCB27D3511F00CA0F2A /* PLGFile.h in Headers */,
+				D49A8CEF27D4048B00CA0F2A /* PLGConnection.h in Headers */,
 				D49A8CDE27D3FE4200CA0F2A /* PLGVNodeDelegate.h in Headers */,
 				D49A8CB527D1E37400CA0F2A /* PLGPOSIXError.h in Headers */,
 				D49A8CDA27D3FDC600CA0F2A /* PLGVNode.h in Headers */,
@@ -270,7 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49A8CF027D4048B00CA0F2A /* PLGConnection.m in Sources */,
 				D49A8CE227D4006C00CA0F2A /* PLGIODispatcher.m in Sources */,
+				D49A8CF527D405D500CA0F2A /* PLGSocket.m in Sources */,
 				D49A8CBB27D1E4F100CA0F2A /* PLGFileDescriptor.m in Sources */,
 				D49A8CCC27D3511F00CA0F2A /* PLGFile.m in Sources */,
 				D49A8CC527D1E98700CA0F2A /* PLGInetSocketAddress.m in Sources */,
@@ -278,6 +308,7 @@
 				D49A8CDB27D3FDC600CA0F2A /* PLGVNode.m in Sources */,
 				D49A8C9E27D1E31000CA0F2A /* Plug.docc in Sources */,
 				D49A8CD627D3EBA200CA0F2A /* PLGTimeout.m in Sources */,
+				D49A8CE927D403AA00CA0F2A /* PLGConnectionStatistics.m in Sources */,
 				D49A8CC027D1E80500CA0F2A /* PLGSocketAddress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +317,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49A8CF127D4048B00CA0F2A /* PLGConnection.m in Sources */,
 				D49A8CE327D4006C00CA0F2A /* PLGIODispatcher.m in Sources */,
+				D49A8CF627D405D500CA0F2A /* PLGSocket.m in Sources */,
 				D49A8CBC27D1E4F100CA0F2A /* PLGFileDescriptor.m in Sources */,
 				D49A8CCD27D3511F00CA0F2A /* PLGFile.m in Sources */,
 				D49A8CC627D1E98700CA0F2A /* PLGInetSocketAddress.m in Sources */,
@@ -294,6 +327,7 @@
 				D49A8CDC27D3FDC600CA0F2A /* PLGVNode.m in Sources */,
 				D49A8CA927D1E31000CA0F2A /* PlugTests.m in Sources */,
 				D49A8CD727D3EBA200CA0F2A /* PLGTimeout.m in Sources */,
+				D49A8CEA27D403AA00CA0F2A /* PLGConnectionStatistics.m in Sources */,
 				D49A8CC127D1E80500CA0F2A /* PLGSocketAddress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
