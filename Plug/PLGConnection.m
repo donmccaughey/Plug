@@ -32,6 +32,7 @@
         if (_open) {
             _open = NO;
             [_ioDispatcher close];
+            _timeout = nil;
         }
     }
 }
