@@ -1,6 +1,7 @@
 #import "Histogram.h"
 
 #include <Plug/Plug.h>
+#include "Entry.h"
 
 
 @implementation Histogram
@@ -33,14 +34,15 @@
 {
     NSMutableString *report = [NSMutableString new];
     [report appendString:@"Value, Char, Count\n"];
-    for (NSNumber *key in _counts) {
-        NSUInteger value = [key unsignedIntegerValue];
+    NSArray<Entry *> *entries = [Entry sortedArrayOfEntriesWithDictionary:_counts];
+    for (Entry *entry in entries) {
+        NSUInteger chValue = [entry.byte unsignedIntegerValue];
         char ch = ' ';
-        if (value >= ' ' && value <= '~') {
-            ch = (char)value;
+        if (chValue >= ' ' && chValue <= '~') {
+            ch = (char)chValue;
         }
-        NSUInteger count = [_counts[key] unsignedIntegerValue];
-        [report appendFormat:@"%5lu,    %C, %5lu\n", value, ch, count];
+        NSUInteger count = [entry.count unsignedIntegerValue];
+        [report appendFormat:@"%5lu,    %C, %5lu\n", chValue, ch, count];
     }
     NSData *ascii = [report dataUsingEncoding:NSASCIIStringEncoding];
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D488567127E6C0DA00BF7171 /* Plug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49A8C9927D1E31000CA0F2A /* Plug.framework */; };
 		D488567827E6C14600BF7171 /* NSData+PlugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D488567727E6C14600BF7171 /* NSData+PlugTests.m */; };
+		D488567B27E6E31500BF7171 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = D488567A27E6E31500BF7171 /* Entry.m */; };
 		D49A8C9E27D1E31000CA0F2A /* Plug.docc in Sources */ = {isa = PBXBuildFile; fileRef = D49A8C9D27D1E31000CA0F2A /* Plug.docc */; };
 		D49A8CAA27D1E31000CA0F2A /* Plug.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8C9C27D1E31000CA0F2A /* Plug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D49A8CB527D1E37400CA0F2A /* PLGPOSIXError.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CB327D1E37300CA0F2A /* PLGPOSIXError.h */; };
@@ -115,6 +116,8 @@
 /* Begin PBXFileReference section */
 		D488566D27E6C0DA00BF7171 /* PlugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D488567727E6C14600BF7171 /* NSData+PlugTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+PlugTests.m"; sourceTree = "<group>"; };
+		D488567927E6E31500BF7171 /* Entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		D488567A27E6E31500BF7171 /* Entry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		D49A8C9927D1E31000CA0F2A /* Plug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49A8C9C27D1E31000CA0F2A /* Plug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plug.h; sourceTree = "<group>"; };
 		D49A8C9D27D1E31000CA0F2A /* Plug.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Plug.docc; sourceTree = "<group>"; };
@@ -280,13 +283,15 @@
 		D49A8D3727D5DF4700CA0F2A /* HistogramServer */ = {
 			isa = PBXGroup;
 			children = (
-				D49A8D3827D5DF4700CA0F2A /* main.m */,
-				D4A1E1D727D6C7A6003ED334 /* Session.h */,
-				D4A1E1D827D6C7A6003ED334 /* Session.m */,
-				D4A1E1DA27D6D955003ED334 /* Server.h */,
-				D4A1E1DB27D6D955003ED334 /* Server.m */,
+				D488567927E6E31500BF7171 /* Entry.h */,
+				D488567A27E6E31500BF7171 /* Entry.m */,
 				D4A1E1DD27D6E0F6003ED334 /* Histogram.h */,
 				D4A1E1DE27D6E0F6003ED334 /* Histogram.m */,
+				D49A8D3827D5DF4700CA0F2A /* main.m */,
+				D4A1E1DA27D6D955003ED334 /* Server.h */,
+				D4A1E1DB27D6D955003ED334 /* Server.m */,
+				D4A1E1D727D6C7A6003ED334 /* Session.h */,
+				D4A1E1D827D6C7A6003ED334 /* Session.m */,
 			);
 			path = HistogramServer;
 			sourceTree = "<group>";
@@ -518,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4A1E1DF27D6E0F6003ED334 /* Histogram.m in Sources */,
+				D488567B27E6E31500BF7171 /* Entry.m in Sources */,
 				D4A1E1DC27D6D955003ED334 /* Server.m in Sources */,
 				D4A1E1D927D6C7A6003ED334 /* Session.m in Sources */,
 				D49A8D3927D5DF4700CA0F2A /* main.m in Sources */,
