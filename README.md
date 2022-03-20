@@ -47,7 +47,7 @@ have ports open to the public.
 _Plug_ is available under a BSD-style license.  See the [`LICENSE.md`][9] file
 for details.
 
-[9]: https://github.com/donmccaughey/Plug/master/LICENSE.md
+[9]: https://github.com/donmccaughey/Plug/blob/main/LICENSE.md
 
 
 ## Class Hierarchy
@@ -131,4 +131,3 @@ wraps a `PLGSocket`, a `PLGIODispatcher` and a `PLGTimeout`, and implements the
 
 - `PLGConnectionDelegate`: protocol for an object that handles connection
   events.
-
