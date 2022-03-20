@@ -36,7 +36,7 @@ didAcceptConnections:(nonnull NSArray *)connections;
         connection.delegate = session;
         
         NSError *error = nil;
-        BOOL opened = [connection openWithTimeoutInterval:5.0
+        BOOL opened = [connection openWithTimeoutInterval:10.0
                                              timeoutQueue:timeoutQueue
                                         andCleanupOnQueue:ioQueue
                                                     error:&error];
