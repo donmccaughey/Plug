@@ -86,7 +86,7 @@
 {
     @synchronized (self) {
         return [NSString stringWithFormat:@"<%@: %p (%@)>",
-                [self class], (__bridge void *) self, _serverAddress];
+                [self class], (__bridge void *)self, _serverAddress];
     }
 }
 

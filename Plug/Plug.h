@@ -5,6 +5,7 @@ FOUNDATION_EXPORT double PlugVersionNumber;
 FOUNDATION_EXPORT const unsigned char PlugVersionString[];
 
 
+#import <Plug/NSData+Plug.h>
 #import <Plug/PLGConnection.h>
 #import <Plug/PLGConnectionDelegate.h>
 #import <Plug/PLGConnectionStatistics.h>

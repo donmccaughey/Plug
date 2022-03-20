@@ -7,71 +7,117 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D488567127E6C0DA00BF7171 /* Plug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49A8C9927D1E31000CA0F2A /* Plug.framework */; };
+		D488567827E6C14600BF7171 /* NSData+PlugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D488567727E6C14600BF7171 /* NSData+PlugTests.m */; };
 		D49A8C9E27D1E31000CA0F2A /* Plug.docc in Sources */ = {isa = PBXBuildFile; fileRef = D49A8C9D27D1E31000CA0F2A /* Plug.docc */; };
-		D49A8CA427D1E31000CA0F2A /* Plug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49A8C9927D1E31000CA0F2A /* Plug.framework */; };
-		D49A8CA927D1E31000CA0F2A /* PlugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CA827D1E31000CA0F2A /* PlugTests.m */; };
 		D49A8CAA27D1E31000CA0F2A /* Plug.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8C9C27D1E31000CA0F2A /* Plug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D49A8CB527D1E37400CA0F2A /* PLGPOSIXError.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CB327D1E37300CA0F2A /* PLGPOSIXError.h */; };
 		D49A8CB627D1E37400CA0F2A /* PLGPOSIXError.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CB427D1E37300CA0F2A /* PLGPOSIXError.m */; };
-		D49A8CB727D1E37400CA0F2A /* PLGPOSIXError.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CB427D1E37300CA0F2A /* PLGPOSIXError.m */; };
 		D49A8CBA27D1E4F100CA0F2A /* PLGFileDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CB827D1E4F100CA0F2A /* PLGFileDescriptor.h */; };
 		D49A8CBB27D1E4F100CA0F2A /* PLGFileDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CB927D1E4F100CA0F2A /* PLGFileDescriptor.m */; };
-		D49A8CBC27D1E4F100CA0F2A /* PLGFileDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CB927D1E4F100CA0F2A /* PLGFileDescriptor.m */; };
 		D49A8CBF27D1E80500CA0F2A /* PLGSocketAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CBD27D1E80500CA0F2A /* PLGSocketAddress.h */; };
 		D49A8CC027D1E80500CA0F2A /* PLGSocketAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CBE27D1E80500CA0F2A /* PLGSocketAddress.m */; };
-		D49A8CC127D1E80500CA0F2A /* PLGSocketAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CBE27D1E80500CA0F2A /* PLGSocketAddress.m */; };
 		D49A8CC427D1E98700CA0F2A /* PLGInetSocketAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CC227D1E98700CA0F2A /* PLGInetSocketAddress.h */; };
 		D49A8CC527D1E98700CA0F2A /* PLGInetSocketAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CC327D1E98700CA0F2A /* PLGInetSocketAddress.m */; };
-		D49A8CC627D1E98700CA0F2A /* PLGInetSocketAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CC327D1E98700CA0F2A /* PLGInetSocketAddress.m */; };
 		D49A8CCB27D3511F00CA0F2A /* PLGFile.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CC927D3511F00CA0F2A /* PLGFile.h */; };
 		D49A8CCC27D3511F00CA0F2A /* PLGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CCA27D3511F00CA0F2A /* PLGFile.m */; };
-		D49A8CCD27D3511F00CA0F2A /* PLGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CCA27D3511F00CA0F2A /* PLGFile.m */; };
 		D49A8CD527D3EBA200CA0F2A /* PLGTimeout.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CD327D3EBA200CA0F2A /* PLGTimeout.h */; };
 		D49A8CD627D3EBA200CA0F2A /* PLGTimeout.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CD427D3EBA200CA0F2A /* PLGTimeout.m */; };
-		D49A8CD727D3EBA200CA0F2A /* PLGTimeout.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CD427D3EBA200CA0F2A /* PLGTimeout.m */; };
 		D49A8CDA27D3FDC600CA0F2A /* PLGVNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CD827D3FDC600CA0F2A /* PLGVNode.h */; };
 		D49A8CDB27D3FDC600CA0F2A /* PLGVNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CD927D3FDC600CA0F2A /* PLGVNode.m */; };
-		D49A8CDC27D3FDC600CA0F2A /* PLGVNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CD927D3FDC600CA0F2A /* PLGVNode.m */; };
 		D49A8CDE27D3FE4200CA0F2A /* PLGVNodeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CDD27D3FE4200CA0F2A /* PLGVNodeDelegate.h */; };
 		D49A8CE127D4006C00CA0F2A /* PLGIODispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CDF27D4006C00CA0F2A /* PLGIODispatcher.h */; };
 		D49A8CE227D4006C00CA0F2A /* PLGIODispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE027D4006C00CA0F2A /* PLGIODispatcher.m */; };
-		D49A8CE327D4006C00CA0F2A /* PLGIODispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE027D4006C00CA0F2A /* PLGIODispatcher.m */; };
 		D49A8CE527D4014900CA0F2A /* PLGIODispatcherDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CE427D4014900CA0F2A /* PLGIODispatcherDelegate.h */; };
 		D49A8CE827D403AA00CA0F2A /* PLGConnectionStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CE627D403AA00CA0F2A /* PLGConnectionStatistics.h */; };
 		D49A8CE927D403AA00CA0F2A /* PLGConnectionStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE727D403AA00CA0F2A /* PLGConnectionStatistics.m */; };
-		D49A8CEA27D403AA00CA0F2A /* PLGConnectionStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE727D403AA00CA0F2A /* PLGConnectionStatistics.m */; };
 		D49A8CEC27D4040200CA0F2A /* PLGConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CEB27D4040200CA0F2A /* PLGConnectionDelegate.h */; };
 		D49A8CEF27D4048B00CA0F2A /* PLGConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CED27D4048B00CA0F2A /* PLGConnection.h */; };
 		D49A8CF027D4048B00CA0F2A /* PLGConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CEE27D4048B00CA0F2A /* PLGConnection.m */; };
-		D49A8CF127D4048B00CA0F2A /* PLGConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CEE27D4048B00CA0F2A /* PLGConnection.m */; };
 		D49A8CF427D405D500CA0F2A /* PLGSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CF227D405D500CA0F2A /* PLGSocket.h */; };
 		D49A8CF527D405D500CA0F2A /* PLGSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CF327D405D500CA0F2A /* PLGSocket.m */; };
-		D49A8CF627D405D500CA0F2A /* PLGSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CF327D405D500CA0F2A /* PLGSocket.m */; };
 		D49A8CF927D40BBF00CA0F2A /* PLGListenerStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CF727D40BBF00CA0F2A /* PLGListenerStatistics.h */; };
 		D49A8CFA27D40BBF00CA0F2A /* PLGListenerStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CF827D40BBF00CA0F2A /* PLGListenerStatistics.m */; };
-		D49A8CFB27D40BBF00CA0F2A /* PLGListenerStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CF827D40BBF00CA0F2A /* PLGListenerStatistics.m */; };
 		D49A8CFD27D40C1F00CA0F2A /* PLGListenerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CFC27D40C1F00CA0F2A /* PLGListenerDelegate.h */; };
 		D49A8D0027D40C6B00CA0F2A /* PLGListener.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CFE27D40C6B00CA0F2A /* PLGListener.h */; };
 		D49A8D0127D40C6B00CA0F2A /* PLGListener.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CFF27D40C6B00CA0F2A /* PLGListener.m */; };
-		D49A8D0227D40C6B00CA0F2A /* PLGListener.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CFF27D40C6B00CA0F2A /* PLGListener.m */; };
+		D49A8D3927D5DF4700CA0F2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8D3827D5DF4700CA0F2A /* main.m */; };
+		D49A8D5027D5E18100CA0F2A /* PLGConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CEE27D4048B00CA0F2A /* PLGConnection.m */; };
+		D49A8D5127D5E18100CA0F2A /* PLGListener.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CFE27D40C6B00CA0F2A /* PLGListener.h */; };
+		D49A8D5227D5E18100CA0F2A /* PLGListenerStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CF827D40BBF00CA0F2A /* PLGListenerStatistics.m */; };
+		D49A8D5327D5E18100CA0F2A /* PLGSocketAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CBE27D1E80500CA0F2A /* PLGSocketAddress.m */; };
+		D49A8D5427D5E18100CA0F2A /* PLGVNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CD927D3FDC600CA0F2A /* PLGVNode.m */; };
+		D49A8D5527D5E18100CA0F2A /* PLGVNodeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CDD27D3FE4200CA0F2A /* PLGVNodeDelegate.h */; };
+		D49A8D5627D5E18100CA0F2A /* PLGListenerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CFC27D40C1F00CA0F2A /* PLGListenerDelegate.h */; };
+		D49A8D5727D5E18100CA0F2A /* PLGInetSocketAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CC327D1E98700CA0F2A /* PLGInetSocketAddress.m */; };
+		D49A8D5827D5E18100CA0F2A /* PLGIODispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CDF27D4006C00CA0F2A /* PLGIODispatcher.h */; };
+		D49A8D5927D5E18100CA0F2A /* PLGListenerStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CF727D40BBF00CA0F2A /* PLGListenerStatistics.h */; };
+		D49A8D5A27D5E18100CA0F2A /* PLGTimeout.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CD427D3EBA200CA0F2A /* PLGTimeout.m */; };
+		D49A8D5B27D5E18100CA0F2A /* Plug.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8C9C27D1E31000CA0F2A /* Plug.h */; };
+		D49A8D5C27D5E18100CA0F2A /* PLGTimeout.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CD327D3EBA200CA0F2A /* PLGTimeout.h */; };
+		D49A8D5D27D5E18100CA0F2A /* PLGConnectionStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE727D403AA00CA0F2A /* PLGConnectionStatistics.m */; };
+		D49A8D5E27D5E18100CA0F2A /* PLGIODispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CE027D4006C00CA0F2A /* PLGIODispatcher.m */; };
+		D49A8D5F27D5E18100CA0F2A /* PLGSocketAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CBD27D1E80500CA0F2A /* PLGSocketAddress.h */; };
+		D49A8D6027D5E18100CA0F2A /* PLGSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CF227D405D500CA0F2A /* PLGSocket.h */; };
+		D49A8D6127D5E18100CA0F2A /* PLGConnectionStatistics.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CE627D403AA00CA0F2A /* PLGConnectionStatistics.h */; };
+		D49A8D6227D5E18100CA0F2A /* PLGPOSIXError.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CB327D1E37300CA0F2A /* PLGPOSIXError.h */; };
+		D49A8D6327D5E18100CA0F2A /* PLGSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CF327D405D500CA0F2A /* PLGSocket.m */; };
+		D49A8D6427D5E18100CA0F2A /* PLGVNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CD827D3FDC600CA0F2A /* PLGVNode.h */; };
+		D49A8D6527D5E18100CA0F2A /* PLGListener.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CFF27D40C6B00CA0F2A /* PLGListener.m */; };
+		D49A8D6627D5E18100CA0F2A /* PLGFile.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CC927D3511F00CA0F2A /* PLGFile.h */; };
+		D49A8D6727D5E18100CA0F2A /* PLGFileDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CB927D1E4F100CA0F2A /* PLGFileDescriptor.m */; };
+		D49A8D6827D5E18100CA0F2A /* PLGInetSocketAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CC227D1E98700CA0F2A /* PLGInetSocketAddress.h */; };
+		D49A8D6927D5E18100CA0F2A /* PLGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CCA27D3511F00CA0F2A /* PLGFile.m */; };
+		D49A8D6A27D5E18100CA0F2A /* PLGConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CED27D4048B00CA0F2A /* PLGConnection.h */; };
+		D49A8D6B27D5E18100CA0F2A /* PLGConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CEB27D4040200CA0F2A /* PLGConnectionDelegate.h */; };
+		D49A8D6C27D5E18100CA0F2A /* PLGFileDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CB827D1E4F100CA0F2A /* PLGFileDescriptor.h */; };
+		D49A8D6D27D5E18100CA0F2A /* PLGPOSIXError.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CB427D1E37300CA0F2A /* PLGPOSIXError.m */; };
+		D49A8D6E27D5E18100CA0F2A /* PLGIODispatcherDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CE427D4014900CA0F2A /* PLGIODispatcherDelegate.h */; };
+		D49A8D6F27D5E1B500CA0F2A /* liblibplug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49A8D4727D5E17100CA0F2A /* liblibplug.a */; };
+		D4A1E1D927D6C7A6003ED334 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1E1D827D6C7A6003ED334 /* Session.m */; };
+		D4A1E1DC27D6D955003ED334 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1E1DB27D6D955003ED334 /* Server.m */; };
+		D4A1E1DF27D6E0F6003ED334 /* Histogram.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1E1DE27D6E0F6003ED334 /* Histogram.m */; };
+		D4A1E1E227D9343F003ED334 /* NSData+Plug.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A1E1E027D9343F003ED334 /* NSData+Plug.h */; };
+		D4A1E1E327D9343F003ED334 /* NSData+Plug.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A1E1E027D9343F003ED334 /* NSData+Plug.h */; };
+		D4A1E1E427D9343F003ED334 /* NSData+Plug.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1E1E127D9343F003ED334 /* NSData+Plug.m */; };
+		D4A1E1E527D9343F003ED334 /* NSData+Plug.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1E1E127D9343F003ED334 /* NSData+Plug.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D49A8CA527D1E31000CA0F2A /* PBXContainerItemProxy */ = {
+		D488567227E6C0DA00BF7171 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D49A8C9027D1E31000CA0F2A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D49A8C9827D1E31000CA0F2A;
 			remoteInfo = Plug;
 		};
+		D49A8D7027D5E1B500CA0F2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D49A8C9027D1E31000CA0F2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D49A8D4627D5E17100CA0F2A;
+			remoteInfo = libplug;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D49A8D3427D5DF4700CA0F2A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D488566D27E6C0DA00BF7171 /* PlugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D488567727E6C14600BF7171 /* NSData+PlugTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+PlugTests.m"; sourceTree = "<group>"; };
 		D49A8C9927D1E31000CA0F2A /* Plug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49A8C9C27D1E31000CA0F2A /* Plug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plug.h; sourceTree = "<group>"; };
 		D49A8C9D27D1E31000CA0F2A /* Plug.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Plug.docc; sourceTree = "<group>"; };
-		D49A8CA327D1E31000CA0F2A /* PlugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D49A8CA827D1E31000CA0F2A /* PlugTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlugTests.m; sourceTree = "<group>"; };
 		D49A8CB327D1E37300CA0F2A /* PLGPOSIXError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGPOSIXError.h; sourceTree = "<group>"; };
 		D49A8CB427D1E37300CA0F2A /* PLGPOSIXError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGPOSIXError.m; sourceTree = "<group>"; };
 		D49A8CB827D1E4F100CA0F2A /* PLGFileDescriptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGFileDescriptor.h; sourceTree = "<group>"; };
@@ -104,9 +150,28 @@
 		D49A8CFC27D40C1F00CA0F2A /* PLGListenerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGListenerDelegate.h; sourceTree = "<group>"; };
 		D49A8CFE27D40C6B00CA0F2A /* PLGListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLGListener.h; sourceTree = "<group>"; };
 		D49A8CFF27D40C6B00CA0F2A /* PLGListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGListener.m; sourceTree = "<group>"; };
+		D49A8D3627D5DF4700CA0F2A /* HistogramServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HistogramServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49A8D3827D5DF4700CA0F2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D49A8D4727D5E17100CA0F2A /* liblibplug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibplug.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A1E1D727D6C7A6003ED334 /* Session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		D4A1E1D827D6C7A6003ED334 /* Session.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		D4A1E1DA27D6D955003ED334 /* Server.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		D4A1E1DB27D6D955003ED334 /* Server.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		D4A1E1DD27D6E0F6003ED334 /* Histogram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Histogram.h; sourceTree = "<group>"; };
+		D4A1E1DE27D6E0F6003ED334 /* Histogram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Histogram.m; sourceTree = "<group>"; };
+		D4A1E1E027D9343F003ED334 /* NSData+Plug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Plug.h"; sourceTree = "<group>"; };
+		D4A1E1E127D9343F003ED334 /* NSData+Plug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Plug.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D488566A27E6C0DA00BF7171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D488567127E6C0DA00BF7171 /* Plug.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D49A8C9627D1E31000CA0F2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,25 +179,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D49A8CA027D1E31000CA0F2A /* Frameworks */ = {
+		D49A8D3327D5DF4700CA0F2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49A8CA427D1E31000CA0F2A /* Plug.framework in Frameworks */,
+				D49A8D6F27D5E1B500CA0F2A /* liblibplug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D49A8D4527D5E17100CA0F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D488566E27E6C0DA00BF7171 /* PlugTests */ = {
+			isa = PBXGroup;
+			children = (
+				D488567727E6C14600BF7171 /* NSData+PlugTests.m */,
+			);
+			path = PlugTests;
+			sourceTree = "<group>";
+		};
 		D49A8C8F27D1E31000CA0F2A = {
 			isa = PBXGroup;
 			children = (
-				D49A8CC727D2F48200CA0F2A /* LICENSE.md */,
 				D49A8CC827D2F48200CA0F2A /* README.md */,
+				D49A8CC727D2F48200CA0F2A /* LICENSE.md */,
 				D49A8C9B27D1E31000CA0F2A /* Plug */,
-				D49A8CA727D1E31000CA0F2A /* PlugTests */,
+				D488566E27E6C0DA00BF7171 /* PlugTests */,
+				D49A8D3727D5DF4700CA0F2A /* HistogramServer */,
 				D49A8C9A27D1E31000CA0F2A /* Products */,
+				D49A8D3027D5DE6C00CA0F2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,7 +222,9 @@
 			isa = PBXGroup;
 			children = (
 				D49A8C9927D1E31000CA0F2A /* Plug.framework */,
-				D49A8CA327D1E31000CA0F2A /* PlugTests.xctest */,
+				D49A8D3627D5DF4700CA0F2A /* HistogramServer */,
+				D49A8D4727D5E17100CA0F2A /* liblibplug.a */,
+				D488566D27E6C0DA00BF7171 /* PlugTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +234,8 @@
 			children = (
 				D49A8C9D27D1E31000CA0F2A /* Plug.docc */,
 				D49A8C9C27D1E31000CA0F2A /* Plug.h */,
+				D4A1E1E027D9343F003ED334 /* NSData+Plug.h */,
+				D4A1E1E127D9343F003ED334 /* NSData+Plug.m */,
 				D49A8CED27D4048B00CA0F2A /* PLGConnection.h */,
 				D49A8CEE27D4048B00CA0F2A /* PLGConnection.m */,
 				D49A8CEB27D4040200CA0F2A /* PLGConnectionDelegate.h */,
@@ -184,12 +270,25 @@
 			path = Plug;
 			sourceTree = "<group>";
 		};
-		D49A8CA727D1E31000CA0F2A /* PlugTests */ = {
+		D49A8D3027D5DE6C00CA0F2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D49A8CA827D1E31000CA0F2A /* PlugTests.m */,
 			);
-			path = PlugTests;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D49A8D3727D5DF4700CA0F2A /* HistogramServer */ = {
+			isa = PBXGroup;
+			children = (
+				D49A8D3827D5DF4700CA0F2A /* main.m */,
+				D4A1E1D727D6C7A6003ED334 /* Session.h */,
+				D4A1E1D827D6C7A6003ED334 /* Session.m */,
+				D4A1E1DA27D6D955003ED334 /* Server.h */,
+				D4A1E1DB27D6D955003ED334 /* Server.m */,
+				D4A1E1DD27D6E0F6003ED334 /* Histogram.h */,
+				D4A1E1DE27D6E0F6003ED334 /* Histogram.m */,
+			);
+			path = HistogramServer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +310,7 @@
 				D49A8CAA27D1E31000CA0F2A /* Plug.h in Headers */,
 				D49A8CF427D405D500CA0F2A /* PLGSocket.h in Headers */,
 				D49A8CBF27D1E80500CA0F2A /* PLGSocketAddress.h in Headers */,
+				D4A1E1E227D9343F003ED334 /* NSData+Plug.h in Headers */,
 				D49A8CCB27D3511F00CA0F2A /* PLGFile.h in Headers */,
 				D49A8CFD27D40C1F00CA0F2A /* PLGListenerDelegate.h in Headers */,
 				D49A8CEF27D4048B00CA0F2A /* PLGConnection.h in Headers */,
@@ -220,9 +320,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D49A8D4327D5E17100CA0F2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D49A8D5527D5E18100CA0F2A /* PLGVNodeDelegate.h in Headers */,
+				D49A8D5827D5E18100CA0F2A /* PLGIODispatcher.h in Headers */,
+				D49A8D5B27D5E18100CA0F2A /* Plug.h in Headers */,
+				D49A8D6027D5E18100CA0F2A /* PLGSocket.h in Headers */,
+				D49A8D5127D5E18100CA0F2A /* PLGListener.h in Headers */,
+				D49A8D6227D5E18100CA0F2A /* PLGPOSIXError.h in Headers */,
+				D49A8D6427D5E18100CA0F2A /* PLGVNode.h in Headers */,
+				D49A8D5C27D5E18100CA0F2A /* PLGTimeout.h in Headers */,
+				D49A8D6A27D5E18100CA0F2A /* PLGConnection.h in Headers */,
+				D49A8D5F27D5E18100CA0F2A /* PLGSocketAddress.h in Headers */,
+				D49A8D6B27D5E18100CA0F2A /* PLGConnectionDelegate.h in Headers */,
+				D49A8D6E27D5E18100CA0F2A /* PLGIODispatcherDelegate.h in Headers */,
+				D4A1E1E327D9343F003ED334 /* NSData+Plug.h in Headers */,
+				D49A8D5927D5E18100CA0F2A /* PLGListenerStatistics.h in Headers */,
+				D49A8D6827D5E18100CA0F2A /* PLGInetSocketAddress.h in Headers */,
+				D49A8D5627D5E18100CA0F2A /* PLGListenerDelegate.h in Headers */,
+				D49A8D6C27D5E18100CA0F2A /* PLGFileDescriptor.h in Headers */,
+				D49A8D6627D5E18100CA0F2A /* PLGFile.h in Headers */,
+				D49A8D6127D5E18100CA0F2A /* PLGConnectionStatistics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D488566C27E6C0DA00BF7171 /* PlugTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D488567627E6C0DA00BF7171 /* Build configuration list for PBXNativeTarget "PlugTests" */;
+			buildPhases = (
+				D488566927E6C0DA00BF7171 /* Sources */,
+				D488566A27E6C0DA00BF7171 /* Frameworks */,
+				D488566B27E6C0DA00BF7171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D488567327E6C0DA00BF7171 /* PBXTargetDependency */,
+			);
+			name = PlugTests;
+			productName = PlugTests;
+			productReference = D488566D27E6C0DA00BF7171 /* PlugTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D49A8C9827D1E31000CA0F2A /* Plug */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D49A8CAD27D1E31000CA0F2A /* Build configuration list for PBXNativeTarget "Plug" */;
@@ -241,23 +385,40 @@
 			productReference = D49A8C9927D1E31000CA0F2A /* Plug.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D49A8CA227D1E31000CA0F2A /* PlugTests */ = {
+		D49A8D3527D5DF4700CA0F2A /* HistogramServer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D49A8CB027D1E31000CA0F2A /* Build configuration list for PBXNativeTarget "PlugTests" */;
+			buildConfigurationList = D49A8D3A27D5DF4700CA0F2A /* Build configuration list for PBXNativeTarget "HistogramServer" */;
 			buildPhases = (
-				D49A8C9F27D1E31000CA0F2A /* Sources */,
-				D49A8CA027D1E31000CA0F2A /* Frameworks */,
-				D49A8CA127D1E31000CA0F2A /* Resources */,
+				D49A8D3227D5DF4700CA0F2A /* Sources */,
+				D49A8D3327D5DF4700CA0F2A /* Frameworks */,
+				D49A8D3427D5DF4700CA0F2A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D49A8CA627D1E31000CA0F2A /* PBXTargetDependency */,
+				D49A8D7127D5E1B500CA0F2A /* PBXTargetDependency */,
 			);
-			name = PlugTests;
-			productName = PlugTests;
-			productReference = D49A8CA327D1E31000CA0F2A /* PlugTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = HistogramServer;
+			productName = HistogramServer;
+			productReference = D49A8D3627D5DF4700CA0F2A /* HistogramServer */;
+			productType = "com.apple.product-type.tool";
+		};
+		D49A8D4627D5E17100CA0F2A /* libplug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D49A8D4D27D5E17100CA0F2A /* Build configuration list for PBXNativeTarget "libplug" */;
+			buildPhases = (
+				D49A8D4327D5E17100CA0F2A /* Headers */,
+				D49A8D4427D5E17100CA0F2A /* Sources */,
+				D49A8D4527D5E17100CA0F2A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libplug;
+			productName = libplug;
+			productReference = D49A8D4727D5E17100CA0F2A /* liblibplug.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -269,10 +430,16 @@
 				CLASSPREFIX = PLG;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					D488566C27E6C0DA00BF7171 = {
+						CreatedOnToolsVersion = 13.3;
+					};
 					D49A8C9827D1E31000CA0F2A = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					D49A8CA227D1E31000CA0F2A = {
+					D49A8D3527D5DF4700CA0F2A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D49A8D4627D5E17100CA0F2A = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -291,20 +458,22 @@
 			projectRoot = "";
 			targets = (
 				D49A8C9827D1E31000CA0F2A /* Plug */,
-				D49A8CA227D1E31000CA0F2A /* PlugTests */,
+				D49A8D4627D5E17100CA0F2A /* libplug */,
+				D488566C27E6C0DA00BF7171 /* PlugTests */,
+				D49A8D3527D5DF4700CA0F2A /* HistogramServer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D49A8C9727D1E31000CA0F2A /* Resources */ = {
+		D488566B27E6C0DA00BF7171 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D49A8CA127D1E31000CA0F2A /* Resources */ = {
+		D49A8C9727D1E31000CA0F2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,6 +483,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D488566927E6C0DA00BF7171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D488567827E6C14600BF7171 /* NSData+PlugTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D49A8C9527D1E31000CA0F2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,42 +508,89 @@
 				D49A8CD627D3EBA200CA0F2A /* PLGTimeout.m in Sources */,
 				D49A8CE927D403AA00CA0F2A /* PLGConnectionStatistics.m in Sources */,
 				D49A8CC027D1E80500CA0F2A /* PLGSocketAddress.m in Sources */,
+				D4A1E1E427D9343F003ED334 /* NSData+Plug.m in Sources */,
 				D49A8CFA27D40BBF00CA0F2A /* PLGListenerStatistics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D49A8C9F27D1E31000CA0F2A /* Sources */ = {
+		D49A8D3227D5DF4700CA0F2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49A8CF127D4048B00CA0F2A /* PLGConnection.m in Sources */,
-				D49A8CE327D4006C00CA0F2A /* PLGIODispatcher.m in Sources */,
-				D49A8CF627D405D500CA0F2A /* PLGSocket.m in Sources */,
-				D49A8CBC27D1E4F100CA0F2A /* PLGFileDescriptor.m in Sources */,
-				D49A8CCD27D3511F00CA0F2A /* PLGFile.m in Sources */,
-				D49A8CC627D1E98700CA0F2A /* PLGInetSocketAddress.m in Sources */,
-				D49A8CB727D1E37400CA0F2A /* PLGPOSIXError.m in Sources */,
-				D49A8D0227D40C6B00CA0F2A /* PLGListener.m in Sources */,
-				D49A8CDC27D3FDC600CA0F2A /* PLGVNode.m in Sources */,
-				D49A8CA927D1E31000CA0F2A /* PlugTests.m in Sources */,
-				D49A8CD727D3EBA200CA0F2A /* PLGTimeout.m in Sources */,
-				D49A8CEA27D403AA00CA0F2A /* PLGConnectionStatistics.m in Sources */,
-				D49A8CC127D1E80500CA0F2A /* PLGSocketAddress.m in Sources */,
-				D49A8CFB27D40BBF00CA0F2A /* PLGListenerStatistics.m in Sources */,
+				D4A1E1DF27D6E0F6003ED334 /* Histogram.m in Sources */,
+				D4A1E1DC27D6D955003ED334 /* Server.m in Sources */,
+				D4A1E1D927D6C7A6003ED334 /* Session.m in Sources */,
+				D49A8D3927D5DF4700CA0F2A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D49A8D4427D5E17100CA0F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D49A8D6D27D5E18100CA0F2A /* PLGPOSIXError.m in Sources */,
+				D49A8D6727D5E18100CA0F2A /* PLGFileDescriptor.m in Sources */,
+				D49A8D5E27D5E18100CA0F2A /* PLGIODispatcher.m in Sources */,
+				D49A8D5427D5E18100CA0F2A /* PLGVNode.m in Sources */,
+				D49A8D5227D5E18100CA0F2A /* PLGListenerStatistics.m in Sources */,
+				D49A8D5D27D5E18100CA0F2A /* PLGConnectionStatistics.m in Sources */,
+				D4A1E1E527D9343F003ED334 /* NSData+Plug.m in Sources */,
+				D49A8D5727D5E18100CA0F2A /* PLGInetSocketAddress.m in Sources */,
+				D49A8D5027D5E18100CA0F2A /* PLGConnection.m in Sources */,
+				D49A8D5A27D5E18100CA0F2A /* PLGTimeout.m in Sources */,
+				D49A8D6927D5E18100CA0F2A /* PLGFile.m in Sources */,
+				D49A8D6327D5E18100CA0F2A /* PLGSocket.m in Sources */,
+				D49A8D5327D5E18100CA0F2A /* PLGSocketAddress.m in Sources */,
+				D49A8D6527D5E18100CA0F2A /* PLGListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D49A8CA627D1E31000CA0F2A /* PBXTargetDependency */ = {
+		D488567327E6C0DA00BF7171 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D49A8C9827D1E31000CA0F2A /* Plug */;
-			targetProxy = D49A8CA527D1E31000CA0F2A /* PBXContainerItemProxy */;
+			targetProxy = D488567227E6C0DA00BF7171 /* PBXContainerItemProxy */;
+		};
+		D49A8D7127D5E1B500CA0F2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D49A8D4627D5E17100CA0F2A /* libplug */;
+			targetProxy = D49A8D7027D5E1B500CA0F2A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D488567427E6C0DA00BF7171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K39VF43BJL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.PlugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		D488567527E6C0DA00BF7171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K39VF43BJL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.PlugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
 		D49A8CAB27D1E31000CA0F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -419,6 +643,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = $SRCROOT;
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -475,6 +700,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = $SRCROOT;
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -540,37 +766,62 @@
 			};
 			name = Release;
 		};
-		D49A8CB127D1E31000CA0F2A /* Debug */ = {
+		D49A8D3B27D5DF4700CA0F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K39VF43BJL;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.PlugTests;
+				ENABLE_HARDENED_RUNTIME = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
 			};
 			name = Debug;
 		};
-		D49A8CB227D1E31000CA0F2A /* Release */ = {
+		D49A8D3C27D5DF4700CA0F2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K39VF43BJL;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.PlugTests;
+				ENABLE_HARDENED_RUNTIME = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
+		D49A8D4E27D5E17100CA0F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K39VF43BJL;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D49A8D4F27D5E17100CA0F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K39VF43BJL;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D488567627E6C0DA00BF7171 /* Build configuration list for PBXNativeTarget "PlugTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D488567427E6C0DA00BF7171 /* Debug */,
+				D488567527E6C0DA00BF7171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D49A8C9327D1E31000CA0F2A /* Build configuration list for PBXProject "Plug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -589,11 +840,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D49A8CB027D1E31000CA0F2A /* Build configuration list for PBXNativeTarget "PlugTests" */ = {
+		D49A8D3A27D5DF4700CA0F2A /* Build configuration list for PBXNativeTarget "HistogramServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D49A8CB127D1E31000CA0F2A /* Debug */,
-				D49A8CB227D1E31000CA0F2A /* Release */,
+				D49A8D3B27D5DF4700CA0F2A /* Debug */,
+				D49A8D3C27D5DF4700CA0F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D49A8D4D27D5E17100CA0F2A /* Build configuration list for PBXNativeTarget "libplug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D49A8D4E27D5E17100CA0F2A /* Debug */,
+				D49A8D4F27D5E17100CA0F2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

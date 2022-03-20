@@ -99,9 +99,9 @@ small class hierarchy provides interfaces for the different file-like objects.
 
 ### Listening for Connections
 
-The `PLGListener` class creates objects that will listen on an address and
-accept connections as they come in.  It will do its work on a given dispatch
-queue.  Internally, it pairs a `PLGSocket` with a `dispatch_source_t`.
+The `PLGListener` class creates objects that listen on an address and accept
+connections as they come in.  It will do its work on a given dispatch queue.
+Internally, it pairs a `PLGSocket` with a `dispatch_source_t`.
 
 - `PLGListener`: listens on a given `PLGSocketAddress`.
 
