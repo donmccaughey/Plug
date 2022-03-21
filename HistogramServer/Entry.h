@@ -6,8 +6,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Entry : NSObject
 
-@property (readonly) NSNumber *byte;
-@property (readonly) NSNumber *count;
+@property NSNumber *byte;
+@property NSNumber *count;
 
 + (NSArray<Entry *> *)sortedArrayOfEntriesWithDictionary:(NSDictionary<NSNumber *, NSNumber *> *)dictionary;
 

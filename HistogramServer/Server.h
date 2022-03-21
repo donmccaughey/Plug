@@ -10,11 +10,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Server : NSObject<PLGListenerDelegate>
 
-@property (readwrite, copy) NSMutableArray<Session *> *sessions;
-@property (readwrite) BOOL failed;
-@property (readwrite, copy) PLGListener *listener;
+@property int exit_status;
+@property PLGListener *listener;
+@property (copy) NSMutableArray<Session *> *sessions;
 
-- (BOOL)run;
+- (BOOL)start;
 
 @end
 

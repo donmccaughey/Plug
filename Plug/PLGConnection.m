@@ -97,6 +97,7 @@ didFinishWritingData:(dispatch_data_t)data;
 {
     id<PLGConnectionDelegate> delegate = nil;
     @synchronized (self) {
+        [_timeout reset];
         delegate = _delegate;
     }
     [delegate connection:self didReadData:data];
@@ -186,8 +187,8 @@ didFinishWritingData:(dispatch_data_t)data;
                                              forTarget:self
                                              andAction:@selector(didTimeout)];
         
-        if ( ! [_socket setNonBlock:YES error:error]) return NO;
-        if ( ! [_ioDispatcher openWithFileDescriptor:_socket andCleanupOnQueue:cleanupQueue error:error]) return NO;
+        if (![_socket setNonBlock:YES error:error]) return NO;
+        if (![_ioDispatcher openWithFileDescriptor:_socket andCleanupOnQueue:cleanupQueue error:error]) return NO;
         
         [_ioDispatcher setLowWaterMark:0];
         

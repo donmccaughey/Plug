@@ -3,6 +3,7 @@
 
 @class Histogram;
 @class PLGConnection;
+@class Server;
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -10,12 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Session : NSObject<PLGConnectionDelegate>
 
-@property (readonly, strong) PLGConnection *connection;
-@property (readonly, strong) Histogram *histogram;
-@property (readonly) dispatch_queue_t queue;
+@property PLGConnection *connection;
+@property Histogram *histogram;
+@property dispatch_queue_t queue;
+@property (weak) Server *server;
 
-- (instancetype)initWithConnection:(PLGConnection *)connection
-                          andQueue:(dispatch_queue_t)queue;
+- (instancetype)initWithConnection:(PLGConnection *)connection;
+
+- (BOOL)startWithError:(NSError **)error;
 
 @end
 

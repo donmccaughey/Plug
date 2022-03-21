@@ -11,7 +11,7 @@
     self = [super init];
     if (!self) return nil;
     
-    _failed = NO;
+    _exit_status = EXIT_SUCCESS;
     
     PLGInetSocketAddress *address = [PLGInetSocketAddress anyInternetAddressWithPort:2000];
     _listener = [[PLGListener alloc] initWithServerAddress:address];
@@ -28,21 +28,13 @@ didAcceptConnections:(nonnull NSArray *)connections;
 {
     for (PLGConnection *connection in connections) {
         NSLog(@"Accepted connection from %@", connection.remoteAddress);
-        dispatch_queue_t timeoutQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
-        dispatch_queue_t ioQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-        
-        Session *session = [[Session alloc] initWithConnection:connection
-                                                      andQueue:ioQueue];
-        connection.delegate = session;
+        Session *session = [[Session alloc] initWithConnection:connection];
         
         NSError *error = nil;
-        BOOL opened = [connection openWithTimeoutInterval:10.0
-                                             timeoutQueue:timeoutQueue
-                                        andCleanupOnQueue:ioQueue
-                                                    error:&error];
-        if (opened) {
+        BOOL started = [session startWithError:&error];
+        if (started) {
             [_sessions addObject:session];
-            [connection scheduleReadOnQueue:ioQueue];
+            session.server = self;
         } else {
             NSLog(@"Error: (%li): %@", (long)error.code, error.description);
             [connection close];
@@ -55,7 +47,7 @@ didAcceptConnections:(nonnull NSArray *)connections;
 didFailWithError:(nonnull NSError *)error;
 {
     NSLog(@"Error: (%li): %@", (long)error.code, error.description);
-    self.failed = YES;
+    _exit_status = EXIT_FAILURE;
     [listener close];
 }
 
@@ -63,11 +55,11 @@ didFailWithError:(nonnull NSError *)error;
 - (void)listenerDidClose:(nonnull PLGListener *)listener;
 {
     NSLog(@"Listener on %@ closed", listener.serverAddress);
-    exit(self.failed ? EXIT_FAILURE : EXIT_SUCCESS);
+    exit(_exit_status);
 }
 
 
-- (BOOL)run;
+- (BOOL)start;
 {
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     NSError *error = nil;

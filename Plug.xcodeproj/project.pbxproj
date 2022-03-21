@@ -74,7 +74,7 @@
 		D49A8D6C27D5E18100CA0F2A /* PLGFileDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CB827D1E4F100CA0F2A /* PLGFileDescriptor.h */; };
 		D49A8D6D27D5E18100CA0F2A /* PLGPOSIXError.m in Sources */ = {isa = PBXBuildFile; fileRef = D49A8CB427D1E37300CA0F2A /* PLGPOSIXError.m */; };
 		D49A8D6E27D5E18100CA0F2A /* PLGIODispatcherDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A8CE427D4014900CA0F2A /* PLGIODispatcherDelegate.h */; };
-		D49A8D6F27D5E1B500CA0F2A /* liblibplug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49A8D4727D5E17100CA0F2A /* liblibplug.a */; };
+		D49A8D6F27D5E1B500CA0F2A /* libplug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49A8D4727D5E17100CA0F2A /* libplug.a */; };
 		D4A1E1D927D6C7A6003ED334 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1E1D827D6C7A6003ED334 /* Session.m */; };
 		D4A1E1DC27D6D955003ED334 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1E1DB27D6D955003ED334 /* Server.m */; };
 		D4A1E1DF27D6E0F6003ED334 /* Histogram.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1E1DE27D6E0F6003ED334 /* Histogram.m */; };
@@ -155,7 +155,7 @@
 		D49A8CFF27D40C6B00CA0F2A /* PLGListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLGListener.m; sourceTree = "<group>"; };
 		D49A8D3627D5DF4700CA0F2A /* HistogramServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HistogramServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49A8D3827D5DF4700CA0F2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D49A8D4727D5E17100CA0F2A /* liblibplug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibplug.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49A8D4727D5E17100CA0F2A /* libplug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libplug.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A1E1D727D6C7A6003ED334 /* Session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
 		D4A1E1D827D6C7A6003ED334 /* Session.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
 		D4A1E1DA27D6D955003ED334 /* Server.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49A8D6F27D5E1B500CA0F2A /* liblibplug.a in Frameworks */,
+				D49A8D6F27D5E1B500CA0F2A /* libplug.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +226,7 @@
 			children = (
 				D49A8C9927D1E31000CA0F2A /* Plug.framework */,
 				D49A8D3627D5DF4700CA0F2A /* HistogramServer */,
-				D49A8D4727D5E17100CA0F2A /* liblibplug.a */,
+				D49A8D4727D5E17100CA0F2A /* libplug.a */,
 				D488566D27E6C0DA00BF7171 /* PlugTests.xctest */,
 			);
 			name = Products;
@@ -422,7 +422,7 @@
 			);
 			name = libplug;
 			productName = libplug;
-			productReference = D49A8D4727D5E17100CA0F2A /* liblibplug.a */;
+			productReference = D49A8D4727D5E17100CA0F2A /* libplug.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -799,7 +799,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K39VF43BJL;
-				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_PREFIX = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -810,7 +810,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K39VF43BJL;
-				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_PREFIX = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
